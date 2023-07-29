@@ -6,11 +6,10 @@ Immerse yourself in nostalgic gameplay with this sleek and modern Python impleme
 
 ## Features
 
-- Intuitive GUI design using `tkinter`.
+- Intuitive GUI design using `Tkinter`.
 - Engaging gameplay with realistic board visuals.
 - Responsive and interactive interface.
 - Automatically detects winning combinations and announces the winner.
-- Option to play against a friend or AI (not implemented in this version).
 
 ## How to Play
 
@@ -26,9 +25,6 @@ Immerse yourself in nostalgic gameplay with this sleek and modern Python impleme
 - `tkinter` library (usually included in Python standard library)
 - `ttkbootstrap` library (`pip install ttkbootstrap`)
 
-## Showcase
-
-![Tic-Tac-Toe Game](tic_tac_toe_demo2.gif)
 
 ## Acknowledgments
 
