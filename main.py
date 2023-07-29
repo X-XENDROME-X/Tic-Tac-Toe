@@ -12,7 +12,6 @@ def make_move(row, col):
         current_player = "O" if current_player == "X" else "X"
 
 def check_winner():
-    # Check rows, columns and diagonals
     winning_combinations = (game[0], game[1], game[2],
                             [game[i][0] for i in range(3)],
                             [game[i][1] for i in range(3)],
@@ -43,15 +42,11 @@ def reset_game():
         for j in range(3):
             buttons[i][j].configure(text='', state="enabled")
 
-# Create the main window
 root = tk.Tk()
 root.title("Tic-Tac-Toe")
 style = Style(theme="cyborg")
-
-# Configure the font size and style for buttons
 style.configure("TButton", font=("Helvetica", 24))
 
-# Create buttons for the game board
 buttons = []
 for i in range(3):
     row = []
@@ -61,7 +56,6 @@ for i in range(3):
         row.append(button)
     buttons.append(row)
 
-# Initialize the game board and the current player
 game = [['', '', ''] for _ in range(3)]
 current_player = "X"
 
